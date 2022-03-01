@@ -1,0 +1,20 @@
+.text-field {
+  min-height: 55px;
+  width: 100%;
+  border: 0;
+  border-bottom: 3px solid #fcbf04;
+  background-color: transparent;
+  color: #fcbf04;
+  font-size: 20px;
+  font-weight: bold;
+  &::placeholder {
+    color: rgba($color: #fcbf04, $alpha: 0.4);
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
+// Override
+input[type="number"] {
+  -moz-appearance: textfield;
+}

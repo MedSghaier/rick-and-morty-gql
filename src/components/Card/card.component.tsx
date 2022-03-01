@@ -1,18 +1,21 @@
 import { CardProps } from "./card.types";
 import "./card.styles.scss";
+import { Link } from "react-router-dom";
 const Card = (props: CardProps) => {
   const { character } = props;
   return (
     <div className="card">
-      <div className="card__img">
+      <Link to={`${character.id}`} className="card__img">
         <img
           src={character.image ?? ""}
           alt={character.name ?? ""}
           loading="lazy"
         />
-      </div>
+      </Link>
       <div className="card__body">
-        <h2 className="card__title">{character.name}</h2>
+        <Link to={`${character.id}`} className="card__title">
+          <h2>{character.name}</h2>
+        </Link>
         <h4 className="card__subtitle">
           Gender: <span>{character.gender}</span>
         </h4>

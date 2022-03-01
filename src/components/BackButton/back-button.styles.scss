@@ -1,0 +1,24 @@
+.back-btn {
+  font-size: 24px;
+  color: #fcbf04;
+  text-decoration: none;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #fcbf04;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: #fcbf04;
+
+    * {
+      color: #0c0c14;
+    }
+  }
+  &:visited,
+  &:active {
+    color: #fcbf04;
+  }
+}

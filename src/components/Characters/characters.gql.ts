@@ -1,5 +1,5 @@
 import { gql } from "graphql-request";
-export const charactersQuery = gql`
+const charactersQuery = gql`
   query Characters {
     characters {
       results {
@@ -23,3 +23,5 @@ export const charactersQuery = gql`
     }
   }
 `;
+
+export default charactersQuery;

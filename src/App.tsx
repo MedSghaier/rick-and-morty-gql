@@ -1,10 +1,10 @@
+import Router from "./components/AppRouter/Router";
 import "./App.scss";
-import CharactersList from "./components/Characters/characters.component";
 
 function App() {
   return (
     <div className="App">
-      <CharactersList />
+      <Router />
     </div>
   );
 }

@@ -10,6 +10,7 @@
     padding-bottom: 50%;
     border-top-left-radius: 5px;
     overflow: hidden;
+    display: block;
 
     img {
       position: absolute;
@@ -37,7 +38,14 @@
     color: #fff;
     margin: 0;
     margin-bottom: 20px;
-    font-size: 24px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    border-bottom: 1px solid transparent;
+    &:hover {
+      text-decoration: underline;
+      color: #fcbf04;
+      border-color: #fcbf04;
+    }
   }
   // MetaData
   &__subtitle {
