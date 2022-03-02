@@ -15,6 +15,6 @@ git add -A
 git commit -m 'deploy'
 
 # deploying to https://medsghaier.github.io/rick-and-morty-gql
-# git push -f git@github.com:medsghaier/rick-and-morty-gql.git main:gh-pages
+git push -f git@github.com:medsghaier/rick-and-morty-gql.git main:gh-pages
 
 cd -
