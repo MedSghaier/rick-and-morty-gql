@@ -9,7 +9,7 @@ import App from "./App";
 const client = new QueryClient();
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/rick-and-morty-gql">
     <QueryClientProvider client={client}>
       <App />
     </QueryClientProvider>
